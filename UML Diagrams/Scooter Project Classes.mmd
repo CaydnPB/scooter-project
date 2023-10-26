@@ -1,0 +1,43 @@
+---
+title: Scooter Project Classes
+---
+classDiagram
+
+Scooter --o ScooterApp : 
+User --o ScooterApp : registers
+User -- Scooter : hires
+
+class Scooter {
+    +string station
+    +string user
+    +number serial
+    +number nextSerial$
+    +number charge
+    +boolean isBroken
+    +boolean docked
+
+    +rent(user)
+    +dock(station)
+    +recharge()
+    +requestRepair()
+}
+
+class User {
+    +string username 
+    +string password
+    +number age
+    +boolean loggedIn
+    +login(password)
+    +logout()
+}
+
+class ScooterApp {
+    +object stations
+    +object registeredUser
+    +registerUser(username, password, age)
+    +loginUser(username, password)
+    +logoutUser(username)
+    +dockScooter(scooter, station)
+    +rentScooter(scooter, user)
+    +print()
+}
