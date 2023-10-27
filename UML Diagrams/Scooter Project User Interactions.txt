@@ -1,0 +1,41 @@
+     ┌────┐                        ┌──────────┐
+     │User│                        │ScooterApp│
+     └─┬──┘                        └────┬─────┘
+       │  Login Credentials to Register │      
+       │ ───────────────────────────────>      
+       │                                │      
+       │  Invalid Details: Throw Error  │      
+       │ <───────────────────────────────      
+       │                                │      
+       │ Already Registered: Throw Error│      
+       │ <───────────────────────────────      
+       │                                │      
+       │   Age Below 18: Return Error   │      
+       │ <───────────────────────────────      
+       │                                │      
+       │       ELSE: Register User      │      
+       │ <───────────────────────────────      
+       │                                │      
+       │  Login Credentials to Sign In  │      
+       │ ───────────────────────────────>      
+       │                                │      
+       │  Invalid Username: Throw Error │      
+       │ <───────────────────────────────      
+       │                                │      
+       │ Incorrect Password: Throw Error│      
+       │ <───────────────────────────────      
+       │                                │      
+       │       ELSE: Sign In User       │      
+       │ <───────────────────────────────      
+       │                                │      
+       │        Sign Out Request        │      
+       │ ───────────────────────────────>      
+       │                                │      
+       │ User Not Signed In: Throw Error│      
+       │ <───────────────────────────────      
+       │                                │      
+       │       ELSE: Sign Out User      │      
+       │ <───────────────────────────────      
+     ┌─┴──┐                        ┌────┴─────┐
+     │User│                        │ScooterApp│
+     └────┘                        └──────────┘

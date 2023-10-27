@@ -1,0 +1,35 @@
+     ┌───────┐                          ┌──────────┐
+     │Scooter│                          │ScooterApp│
+     └───┬───┘                          └────┬─────┘
+         │     Create Scooter at Station     │      
+         │───────────────────────────────────>      
+         │                                   │      
+         │   Invalid Station: Throw Error    │      
+         │<───────────────────────────────────      
+         │                                   │      
+         │     ELSE: Create New Scooter      │      
+         │<───────────────────────────────────      
+         │                                   │      
+         │      Dock Scooter at Station      │      
+         │───────────────────────────────────>      
+         │                                   │      
+         │   Invalid Station: Throw Error    │      
+         │<───────────────────────────────────      
+         │                                   │      
+         │Scooter Already Docked: Throw Error│      
+         │<───────────────────────────────────      
+         │                                   │      
+         │        ELSE: Dock Scooter         │      
+         │<───────────────────────────────────      
+         │                                   │      
+         │         Rent Out Scooter          │      
+         │───────────────────────────────────>      
+         │                                   │      
+         │Scooter Already Rented: Throw Error│      
+         │<───────────────────────────────────      
+         │                                   │      
+         │        ELSE: Rent to User         │      
+         │<───────────────────────────────────      
+     ┌───┴───┐                          ┌────┴─────┐
+     │Scooter│                          │ScooterApp│
+     └───────┘                          └──────────┘
