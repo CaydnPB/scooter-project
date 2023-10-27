@@ -7,11 +7,18 @@ class User {
   }
 
   login(password) {
-
+    if (password === this.password) {
+      this.loggedIn = true;
+      console.log("Login success")
+    } else {
+      this.loggedIn = false;
+      throw new Error("Login failure")
+    }
   }
 
   logout() {
-
+    this.loggedIn = false;
+    console.log("Logout Success")
   }
 }
 
